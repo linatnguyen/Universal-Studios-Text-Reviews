@@ -1,0 +1,35 @@
+ pip install plotly
+ pip install wordcloud
+ pip install textblob
+ 
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import plotly.express as px
+import plotly.graph_objects as go
+from wordcloud import WordCloud, STOPWORDS , ImageColorGenerator import re
+import string
+from textblob import TextBlob
+from wordcloud import WordCloud
+
+#importing data
+universal = pd.read_csv('/Users/jackt/OneDrive/Desktop/USD/Class 6 Machine Learning/Module 7/universal_studi
+universal
+
+#checking for null values
+universal_df=universal 
+universal_df.isnull().sum()
+
+#check for unique values
+universal_df.nunique()
+
+#check for data types
+universal_df.dtypes
+
+#changing 'branch' from object to category data type
+universal_df['branch']=universal_df['branch'].astype('category')
+
+#convert written data to an actual date
+universal_df['written_date'] = pd.to_datetime(universal_df['written_date'])
+
