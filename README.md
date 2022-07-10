@@ -1,0 +1,2 @@
+# Universal-Studios-Text-Reviews
+Our machine learning project focuses on the patron reviews post their visit to Universal Studios. We will be determining review ratings based on text reviews provided by previous visitors to Universal Studios. We are looking to see if certain words equate to extremely positive or negative reviews. We will also be looking for trends in the data that might hint to larger issues, such as frequency of negative words surrounding a certain ride or experience.
